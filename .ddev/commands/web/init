@@ -1,0 +1,24 @@
+#!/bin/bash
+
+## Description: Initialize project and setup application
+## Usage: setup
+## Example: ddev setup
+
+set -ev
+
+# Cleanup/remove project resources and assets.
+ddev stop --remove-data --omit-snapshot
+ddev start --skip-confirmation
+
+if ! command -v composer >/dev/null; then
+  echo "composer is not available. You may need to install 'composer'"
+  exit 1
+fi
+
+ddev composer nuke
+
+echo "Refreshing your local environment"
+ddev refresh
+
+echo "Your site is ready to use. Below is the information."
+ddev describe

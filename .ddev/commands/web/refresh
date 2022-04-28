@@ -1,0 +1,16 @@
+#!/bin/bash
+
+## Description: Sync the local site with dev environment
+## Usage: refresh
+## Example: ddev refresh
+
+set -ev
+
+echo "Authorize ssh keys in docker containers.."
+ddev auth ssh
+
+echo "Executing composer install.."
+ddev composer install
+
+echo "Apply the updates to current database.."
+ddev deploy -y --no-interaction
