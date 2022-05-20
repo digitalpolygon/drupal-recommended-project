@@ -1,7 +1,7 @@
 Digital Polygon Drupal Recommended Project
 ====
 
-This is an opiniated project template for new Drupal 9 projects. It is based on the [Drupal Recommended Project](https://github.com/drupal/recommended-project/tree/9.3.x), with the principal difference being the addition of several modules and themes.
+This is an opinionated project template for new Drupal 9 projects. It is based on the [Drupal Recommended Project](https://github.com/drupal/recommended-project/tree/9.3.x), with the principal difference being the addition of several modules and themes.
 
 ## It includes
 * Drupal Core
