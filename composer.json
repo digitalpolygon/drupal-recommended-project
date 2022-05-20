@@ -13,6 +13,7 @@
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
         "drupal/focal_point": "^1.5",
+        "drupal/gin": "^3.0@beta",
         "drupal/metatag": "^1.19",
         "drupal/paragraphs": "^1.14",
         "drupal/pathauto": "^1.10",
@@ -38,7 +39,7 @@
             "url": "https://packages.drupal.org/8"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
