@@ -47,5 +47,3 @@ parameters:
         - profile
         - theme
         - info
-        - txt
-        - md
