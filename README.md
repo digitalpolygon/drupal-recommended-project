@@ -49,3 +49,15 @@ Create the file if it doesn't already exist. Update it so `mutagen_enabled: true
 1. `ddev setup` - Use this command to setup the project from scratch.
 2. `ddev refresh` - Use this command to sync your local with dev environment.
 3. `ddev xdebug on` - Use this command to enable xdebug.
+4. `ddev frontend` - Builds frontend dependencies.
+
+## Frontend Theme
+Please add your FE build commands in `build.sh` script available in `scripts` directory.
+## Pantheon Integration
+ - To integrate with pantheon please include [digitalpolygon/drupal-pantheon-integration](https://github.com/digitalpolygon/drupal-pantheon-integration) composer package.
+
+```
+composer require digitalpolygon/drupal-pantheon-integration
+```
+- Update `provider.yml` to use pantheon as a provider
+- Update `refresh` command to use `pantheon` as provider
