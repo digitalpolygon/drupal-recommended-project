@@ -1,0 +1,10 @@
+#!/bin/bash
+
+## Description: Build frontend dependencies
+## Usage: frontend
+## Example: ddev frontend
+
+set -e
+
+echo "Building frontend dependencies"
+exec "./scripts/frontend/build.sh"

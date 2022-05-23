@@ -12,5 +12,11 @@ ddev auth ssh
 echo "Executing composer install.."
 ddev composer install
 
+# echo "Pull database from remote environment.."
+# ddev pull PROVIDER_NAME_HERE
+
 echo "Apply the updates to current database.."
 ddev drush deploy -y --no-interaction
+
+echo "Execute frontend"
+ddev frontend
