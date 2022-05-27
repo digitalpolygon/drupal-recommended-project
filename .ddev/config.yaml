@@ -1,4 +1,3 @@
-name: drupal-recommended-project
 type: drupal9
 docroot: web
 php_version: "7.4"
